@@ -27,7 +27,12 @@ export function Lesson(props: LessonProps) {
   const isActiveLesson = slug === props.slug;
 
   return (
-    <Link to={`/event/lesson/${props.slug}`} className="group">
+    <Link
+      to={`/event/lesson/${props.slug}`}
+      className={classNames("group", {
+        "pointer-events-none": !isLessonAvailable
+      })}
+    >
       <span className="text-gray-300">{availableDateFormatted}</span>
 
       {/* Coloco as variaveis que nunca mudam e depois as condicionais */}
@@ -62,7 +67,7 @@ export function Lesson(props: LessonProps) {
 
           <span
             className={classNames(
-              "text-xs rounded py-[0.125rem] px-2 text-white border  font-bold",
+              "text-xs rounded py-[0.5rem] px-2 text-white border  font-bold",
               {
                 "border-white": isActiveLesson,
                 "border-green-300": !isActiveLesson
