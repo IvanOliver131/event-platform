@@ -25,8 +25,8 @@ export function Subscribe() {
 
   return (
     <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-      <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
-        <div className="max-w-[640px]">
+      <div className="w-full max-w-[1100px] flex items-center flex-col justify-between mt-20 mx-auto md:flex-row gap-5">
+        <div className="max-w-[640px] p-5 md:p-0">
           <Logo />
           <h1 className="mt-8 text-[2.5rem] leading-tight">
             Construa uma{" "}
@@ -72,11 +72,9 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-      <img
-        src="/src/assets/code-mockup.png"
-        className="mt-10"
-        alt="code-mockup"
-      ></img>
+      <div className="flex items-center justify-center">
+        <div className="flex h-[100vh] w-[95vw] bg-none bg-top bg-no-repeat md:bg-codeMockup"></div>
+      </div>
       <Footer />
     </div>
   );
