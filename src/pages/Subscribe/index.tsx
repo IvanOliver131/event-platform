@@ -73,7 +73,7 @@ export function Subscribe() {
         </div>
       </div>
       <div className="flex items-center justify-center">
-        <div className="flex h-[100vh] w-[95vw] bg-none bg-top bg-no-repeat md:bg-codeMockup"></div>
+        <div className="flex h-[49vh] w-[95vw] bg-none bg-top bg-no-repeat md:bg-codeMockup"></div>
       </div>
       <Footer />
     </div>
