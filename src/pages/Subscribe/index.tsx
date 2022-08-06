@@ -30,8 +30,8 @@ export function Subscribe() {
           <Logo />
           <h1 className="mt-8 text-[2.5rem] leading-tight text-center md:text-start ">
             Construa uma{" "}
-            <strong className="text-blue-500">aplicação completa</strong>, do
-            zero, com <strong className="text-blue-500">React JS</strong>
+            <strong className="text-red-500">aplicação completa</strong>, do
+            zero, com <strong className="text-red-500">React JS</strong>
           </h1>
           <p className="mt-4 text-gray-200 leading-relaxed text-center md:text-start">
             Em apenas uma semana você vai dominar na prática uma das tecnologias
@@ -65,7 +65,7 @@ export function Subscribe() {
             <button
               type="submit"
               disabled={loading}
-              className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hove:bg-green-700 transition-colors disabled:opacity-50"
+              className="mt-4 bg-red-500 uppercase py-4 rounded font-bold text-sm hove:bg-green-700 transition-colors disabled:opacity-50"
             >
               Garantir minha vaga
             </button>

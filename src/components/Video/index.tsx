@@ -32,7 +32,7 @@ export function Video({ lessonSlug }: VideoProps) {
   }
 
   return (
-    <div className="flex-1">
+    <div className="flex-1 ">
       <div className="bg-black flex justify-center">
         <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
           <Player>
@@ -73,7 +73,7 @@ export function Video({ lessonSlug }: VideoProps) {
             <a
               href="https://discord.gg/DukkxzdK"
               target="_blank"
-              className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors"
+              className="p-4 text-sm bg-red-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors"
             >
               <DiscordLogo size={24} />
               Comunidade do discord
@@ -95,7 +95,7 @@ export function Video({ lessonSlug }: VideoProps) {
             target="_blank"
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
           >
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-red-600 h-full p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed">
@@ -114,7 +114,7 @@ export function Video({ lessonSlug }: VideoProps) {
             href="https://www.behance.net/search/images?search=rocketseat"
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
           >
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-red-600 h-full p-6 flex items-center">
               <Image size={40} />
             </div>
             <div className="py-6 leading-relaxed">

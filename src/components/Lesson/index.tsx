@@ -40,7 +40,7 @@ export function Lesson(props: LessonProps) {
         className={classNames(
           "rounded border border-gray-500 p-4 mt-2 group-hover:border-green-50",
           {
-            "bg-green-500": isActiveLesson
+            "bg-red-500": isActiveLesson
           }
         )}
       >
@@ -51,7 +51,7 @@ export function Lesson(props: LessonProps) {
                 "flex items-center gap-2 text-smfont-medium",
                 {
                   "text-white": isActiveLesson,
-                  "text-blue-500": !isActiveLesson
+                  "text-red-300": !isActiveLesson
                 }
               )}
             >
