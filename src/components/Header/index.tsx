@@ -20,7 +20,11 @@ export function Header({ handleOpenAndCloseNavbar, isOpen }: HeaderProps) {
           aria-expanded="false"
         >
           <span className="sr-only">Open main menu</span>
-          {isOpen ? <X size={20} /> : <List size={20} />}
+          {isOpen ? (
+            <X size={20} color="white" />
+          ) : (
+            <List size={20} color="white" />
+          )}
         </button>
       </div>
     </header>
