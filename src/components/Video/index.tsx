@@ -1,4 +1,4 @@
-import { DefaultUi, Player, Youtube } from "@vime/react";
+import { DefaultUi, LoadingScreen, Player, Youtube } from "@vime/react";
 import {
   CaretRight,
   DiscordLogo,
@@ -26,7 +26,7 @@ export function Video({ lessonSlug }: VideoProps) {
   if (!data || !data.lesson) {
     return (
       <div className="flex=1">
-        <p>Carregando... </p>
+        <LoadingScreen />
       </div>
     );
   }
@@ -72,6 +72,7 @@ export function Video({ lessonSlug }: VideoProps) {
           <div className="flex flex-col gap-4 w-[100%] lg:max-w-[238px]">
             <a
               href="https://discord.gg/DukkxzdK"
+              target="_blank"
               className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors"
             >
               <DiscordLogo size={24} />
@@ -79,6 +80,7 @@ export function Video({ lessonSlug }: VideoProps) {
             </a>
             <a
               href="https://app.rocketseat.com.br/?"
+              target="_blank"
               className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors"
             >
               <Lightning size={24} />
@@ -90,6 +92,7 @@ export function Video({ lessonSlug }: VideoProps) {
         <div className="gap-8 mt-20 grid grid-cols-1 lg:grid-cols-2">
           <a
             href="https://spacetraveling-ivanoliver131.vercel.app"
+            target="_blank"
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
           >
             <div className="bg-green-700 h-full p-6 flex items-center">
@@ -108,7 +111,7 @@ export function Video({ lessonSlug }: VideoProps) {
           </a>
 
           <a
-            href="https://spacetraveling-ivanoliver131.vercel.app"
+            href="https://www.behance.net/search/images?search=rocketseat"
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
           >
             <div className="bg-green-700 h-full p-6 flex items-center">
